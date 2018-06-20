@@ -104,9 +104,9 @@ export function RestangularConfigFactory (RestangularProvider, storage, http) {
         return false; // error handled
 
       }
-
-      return true; // error not handled
-
+      else {
+        return true; // error not handled
+      }
     }
     return true; // error not handled
   });
