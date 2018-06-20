@@ -1,0 +1,34 @@
+$primary: #2ec95c;
+page-signup {
+  ion-content{
+    background-color: $primary !important;
+  }
+  #signup_app_icon{
+    margin-top: 40px;
+  }
+  #signup_app_title{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    //line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+  }
+  #signupField{
+    color: $primary;
+  }
+  #confirmationField{
+    color: $primary;
+  }
+  #usernameField{
+    color: $primary;
+  }
+  #phoneField{
+    color: $primary;
+  }
+  #passwordField{
+    color: $primary;
+  }
+}

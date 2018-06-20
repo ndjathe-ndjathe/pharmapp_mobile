@@ -1,0 +1,25 @@
+$primary: #2ec95c;
+page-login {
+  ion-content{
+    background-color: $primary !important;
+  }
+  #login_app_icon{
+    margin-top: 40px;
+  }
+  #login_app_title{
+    color: white;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    //line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
+  }
+  #loginField{
+    color: $primary;
+  }
+  #passwordField{
+    color: $primary;
+  }
+}

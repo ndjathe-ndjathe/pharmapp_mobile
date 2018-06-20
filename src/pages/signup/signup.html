@@ -1,0 +1,56 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col id="signup_app_icon" col-4>
+        <img src="../../assets/imgs/logo.png" alt="Logo">
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+    <ion-row align-self-center justify-content-center id="signup_app_title">
+      PharmApp
+    </ion-row>
+  </ion-grid>
+
+  <form #signupForm="ngForm" (ngSubmit)="signup()" autocomplete="off">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input placeholder="Email" name="email" id="signupField" type="email" required [(ngModel)]="email" #emailField></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Username" name="email" id="usernameField" type="text" required [(ngModel)]="username"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Phone" name="phone" id="phoneField" type="number" required [(ngModel)]="phone"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Password Confirmation" name="password" id="confirmationField" type="password" required [(ngModel)]="confirmation"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <button ion-button class="submit-btn" full type="submit" [disabled]="!signupForm.form.valid">Signup
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col text-center>
+      <div style="color: white;">Already have an account, <a style="font-weight: bold; color: #488aff;" (click)="goToSignin()">signin</a></div>
+    </ion-col>
+  </ion-row>
+</ion-content>

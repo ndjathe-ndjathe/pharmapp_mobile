@@ -1,0 +1,21 @@
+$primary: #2ec95c;
+page-home {
+
+}
+.actionSheet{
+  .action-sheet-group{
+    background-color: $primary;
+    color: white;
+    button{
+      color: white;
+      border-bottom: 1px solid white;
+    }
+    .action-sheet-title{
+      font-weight: bold;
+    }
+  }
+  .action-sheet-group:last-child{
+    padding-bottom: 0;
+  }
+}
+
